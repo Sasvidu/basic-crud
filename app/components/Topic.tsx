@@ -5,7 +5,7 @@ import EditBtn from "./EditBtn";
 const Topic = () => {
   return (
     <>
-      <div className="mx-5 my-2 flex items-start justify-between gap-5 border border-slate-300 p-3">
+      <div className="my-2 flex items-start justify-between gap-5 border border-slate-300 p-3">
         <div>
           <h2 className="text-2xl font-bold">Topic Title</h2>
           <p>Topic Description</p>

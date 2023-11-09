@@ -2,11 +2,11 @@ import Topic from "./components/Topic";
 
 export default function Home() {
   return (
-    <main>
+    <div>
       <Topic />
       <Topic />
       <Topic />
       <Topic />
-    </main>
+    </div>
   );
 }
