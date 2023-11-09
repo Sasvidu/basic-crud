@@ -17,7 +17,7 @@ const Topic = ({ id, title, description }: TopicProps) => {
           <p>{description}</p>
         </div>
         <div className="flex gap-2">
-          <RemoveBtn />
+          <RemoveBtn id={id} title={title} />
           <EditBtn href={`editTopic/${id}`} />
         </div>
       </div>

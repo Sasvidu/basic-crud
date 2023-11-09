@@ -6,7 +6,7 @@ interface EditBtnProps {
   href: string;
 }
 
-const RemoveBtn = ({ href }: EditBtnProps) => {
+const EditBtn = ({ href }: EditBtnProps) => {
   return (
     <button>
       <Link
@@ -19,4 +19,4 @@ const RemoveBtn = ({ href }: EditBtnProps) => {
   );
 };
 
-export default RemoveBtn;
+export default EditBtn;
