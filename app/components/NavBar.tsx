@@ -3,7 +3,7 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <div className="mx-5 mt-5 flex h-20 items-center justify-between bg-slate-800 px-8 py-3">
+    <div className="mx-5 my-5 flex h-20 items-center justify-between bg-slate-800 px-8 py-3">
       <Link href="/" className="text-xl font-bold text-white">
         <h1>GTCoding.</h1>
       </Link>

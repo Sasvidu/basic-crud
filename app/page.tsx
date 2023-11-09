@@ -1,7 +1,12 @@
+import Topic from "./components/Topic";
+
 export default function Home() {
   return (
     <main>
-      <h1>Hello World!</h1>
+      <Topic />
+      <Topic />
+      <Topic />
+      <Topic />
     </main>
   );
 }
