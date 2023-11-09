@@ -9,7 +9,7 @@ const NavBar = () => {
       </Link>
       <Link
         href="/addTopic"
-        className="w-30 text-md flex h-12 items-center justify-center bg-white px-3 font-bold text-black lg:text-lg"
+        className="w-30 text-md flex h-12 items-center justify-center bg-white px-3 font-bold text-black transition-all hover:rounded-lg hover:bg-gray-200 lg:text-lg"
       >
         Add Topic
       </Link>

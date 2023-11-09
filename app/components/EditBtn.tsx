@@ -9,7 +9,10 @@ interface EditBtnProps {
 const RemoveBtn = ({ href }: EditBtnProps) => {
   return (
     <button>
-      <Link href={href}>
+      <Link
+        href={href}
+        className="text-gray-700 transition-colors hover:text-black"
+      >
         <HiPencilAlt size={24} />
       </Link>
     </button>
