@@ -30,6 +30,7 @@ const TopicList = async () => {
     <div>
       {topics.map((topic: TopicInterface) => (
         <Topic
+          key={topic._id}
           id={topic._id}
           title={topic.title}
           description={topic.description}
