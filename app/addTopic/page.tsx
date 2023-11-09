@@ -13,7 +13,7 @@ export default function Home() {
       ></input>
       <button
         type="submit"
-        className="w-fit bg-green-500 px-8 py-2 text-white transition-all hover:rounded-lg hover:bg-green-700"
+        className="mt-3 w-fit bg-green-500 px-8 py-2 text-white transition-all hover:rounded-lg hover:bg-green-700"
       >
         Add Topic
       </button>
