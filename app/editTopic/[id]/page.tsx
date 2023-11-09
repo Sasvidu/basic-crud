@@ -13,9 +13,9 @@ export default function Home() {
       ></input>
       <button
         type="submit"
-        className="w-fit bg-green-500 px-8 py-2 text-white transition-all hover:rounded-lg hover:bg-green-700"
+        className="w-fit bg-cyan-500 px-8 py-2 text-white transition-all hover:rounded-lg hover:bg-blue-500"
       >
-        Add Topic
+        Edit Topic
       </button>
     </form>
   );
