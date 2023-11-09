@@ -1,12 +1,9 @@
-import Topic from "./components/Topic";
+import TopicList from "./components/TopicList";
 
 export default function Home() {
   return (
-    <div>
-      <Topic />
-      <Topic />
-      <Topic />
-      <Topic />
-    </div>
+    <>
+      <TopicList />
+    </>
   );
 }

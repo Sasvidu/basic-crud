@@ -2,17 +2,23 @@ import React from "react";
 import RemoveBtn from "./RemoveBtn";
 import EditBtn from "./EditBtn";
 
-const Topic = () => {
+interface TopicProps {
+  id: string;
+  title: string;
+  description: string;
+}
+
+const Topic = ({ id, title, description }: TopicProps) => {
   return (
     <>
       <div className="my-4 flex items-start justify-between gap-5 rounded border border-slate-300 p-3">
         <div>
-          <h2 className="text-2xl font-bold">Topic Title</h2>
-          <p>Topic Description</p>
+          <h2 className="text-2xl font-bold">{title}</h2>
+          <p>{description}</p>
         </div>
         <div className="flex gap-2">
           <RemoveBtn />
-          <EditBtn href="editTopic/123" />
+          <EditBtn href={`editTopic/${id}`} />
         </div>
       </div>
     </>
