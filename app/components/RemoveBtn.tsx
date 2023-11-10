@@ -15,7 +15,7 @@ const RemoveBtn = ({ id, title }: RemoveBtnProps) => {
   const removeTopic = async () => {
     const confirmed = confirm(`Do you want to delete ${title}?`);
     if (confirmed) {
-      const res = await fetch(`http://localhost:3000/api/topics?id=${id}`, {
+      const res = await fetch(`../api/topics?id=${id}`, {
         method: "DELETE",
       });
       if (res.ok) {

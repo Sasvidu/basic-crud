@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { FormEvent } from "react";
 import { useRouter } from "next/navigation";
+import axios from "axios";
 
 const AddTopicForm = () => {
   const [title, setTitle] = useState("");
@@ -18,20 +19,23 @@ const AddTopicForm = () => {
       return;
     }
 
-    try {
-      const res = await fetch("http://localhost:3000/api/topics", {
-        method: "POST",
-        headers: { "Content-type": "application/json" },
-        body: JSON.stringify({ title, description }),
-      });
-      if (res.ok) {
-        router.push("/");
-      } else {
-        throw new Error("Failed to create the topic");
-      }
-    } catch (error) {
-      console.log(error);
-    }
+    await axios.post("../api/topics", JSON.stringify({ title, description }));
+    router.push("/");
+
+    // try {
+    //   const res = await fetch("http://localhost:3000/api/topics", {
+    //     method: "POST",
+    //     headers: { "Content-type": "application/json" },
+    //     body: JSON.stringify({ title, description }),
+    //   });
+    //   if (res.ok) {
+    //     router.push("/");
+    //   } else {
+    //     throw new Error("Failed to create the topic");
+    //   }
+    // } catch (error) {
+    //   console.log(error);
+    // }
   };
 
   return (
