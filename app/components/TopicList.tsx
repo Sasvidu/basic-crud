@@ -5,6 +5,9 @@ import axios from "axios";
 import connectMongoDB from "@/libs/mongodb";
 import TopicSchema from "@/models/topic";
 
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
+
 interface TopicInterface {
   _id: string;
   title: string;
